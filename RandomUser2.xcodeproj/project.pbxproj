@@ -14,6 +14,11 @@
 		182A47B8256FBC100031E052 /* RandomUser2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 182A47B6256FBC100031E052 /* RandomUser2.xcdatamodeld */; };
 		182A47BA256FBC130031E052 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 182A47B9256FBC130031E052 /* Assets.xcassets */; };
 		182A47BD256FBC130031E052 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 182A47BB256FBC130031E052 /* LaunchScreen.storyboard */; };
+		182A47C7256FBC9B0031E052 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A47C5256FBC9B0031E052 /* MyTableViewCell.swift */; };
+		182A47C8256FBC9B0031E052 /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182A47C6256FBC9B0031E052 /* MyTableViewCell.xib */; };
+		182A47CB256FC2680031E052 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A47CA256FC2670031E052 /* UserModel.swift */; };
+		182A47CE256FC2750031E052 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A47CD256FC2750031E052 /* UserService.swift */; };
+		82141741FBD7B438BB29A81F /* Pods_RandomUser2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7213AFCB3C33244DC0B2DC50 /* Pods_RandomUser2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,13 @@
 		182A47B9256FBC130031E052 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		182A47BC256FBC130031E052 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		182A47BE256FBC130031E052 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		182A47C5256FBC9B0031E052 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		182A47C6256FBC9B0031E052 /* MyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTableViewCell.xib; sourceTree = "<group>"; };
+		182A47CA256FC2670031E052 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		182A47CD256FC2750031E052 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		2AAA77C77A02B0FE5E4FFEA4 /* Pods-RandomUser2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomUser2.debug.xcconfig"; path = "Target Support Files/Pods-RandomUser2/Pods-RandomUser2.debug.xcconfig"; sourceTree = "<group>"; };
+		60AB27CD6D35D9E01BE33798 /* Pods-RandomUser2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomUser2.release.xcconfig"; path = "Target Support Files/Pods-RandomUser2/Pods-RandomUser2.release.xcconfig"; sourceTree = "<group>"; };
+		7213AFCB3C33244DC0B2DC50 /* Pods_RandomUser2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RandomUser2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82141741FBD7B438BB29A81F /* Pods_RandomUser2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +57,8 @@
 			children = (
 				182A47AC256FBC100031E052 /* RandomUser2 */,
 				182A47AB256FBC100031E052 /* Products */,
+				FE3A2D13F90308E1B7B561FE /* Pods */,
+				58F705A19B3889A9A3167F51 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,6 +74,8 @@
 			isa = PBXGroup;
 			children = (
 				182A47AD256FBC100031E052 /* AppDelegate.swift */,
+				182A47C5256FBC9B0031E052 /* MyTableViewCell.swift */,
+				182A47C6256FBC9B0031E052 /* MyTableViewCell.xib */,
 				182A47AF256FBC100031E052 /* SceneDelegate.swift */,
 				182A47B1256FBC100031E052 /* ViewController.swift */,
 				182A47B3256FBC100031E052 /* Main.storyboard */,
@@ -66,8 +83,28 @@
 				182A47BB256FBC130031E052 /* LaunchScreen.storyboard */,
 				182A47BE256FBC130031E052 /* Info.plist */,
 				182A47B6256FBC100031E052 /* RandomUser2.xcdatamodeld */,
+				182A47CA256FC2670031E052 /* UserModel.swift */,
+				182A47CD256FC2750031E052 /* UserService.swift */,
 			);
 			path = RandomUser2;
+			sourceTree = "<group>";
+		};
+		58F705A19B3889A9A3167F51 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7213AFCB3C33244DC0B2DC50 /* Pods_RandomUser2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE3A2D13F90308E1B7B561FE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2AAA77C77A02B0FE5E4FFEA4 /* Pods-RandomUser2.debug.xcconfig */,
+				60AB27CD6D35D9E01BE33798 /* Pods-RandomUser2.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +114,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 182A47C1256FBC130031E052 /* Build configuration list for PBXNativeTarget "RandomUser2" */;
 			buildPhases = (
+				88274E9496B57A55BBFEE9C5 /* [CP] Check Pods Manifest.lock */,
 				182A47A6256FBC100031E052 /* Sources */,
 				182A47A7256FBC100031E052 /* Frameworks */,
 				182A47A8256FBC100031E052 /* Resources */,
+				A4FE1C4B1C06F6F8E68EC7DB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				182A47BD256FBC130031E052 /* LaunchScreen.storyboard in Resources */,
+				182A47C8256FBC9B0031E052 /* MyTableViewCell.xib in Resources */,
 				182A47BA256FBC130031E052 /* Assets.xcassets in Resources */,
 				182A47B5256FBC100031E052 /* Main.storyboard in Resources */,
 			);
@@ -135,14 +175,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		88274E9496B57A55BBFEE9C5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RandomUser2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4FE1C4B1C06F6F8E68EC7DB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RandomUser2/Pods-RandomUser2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RandomUser2/Pods-RandomUser2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RandomUser2/Pods-RandomUser2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		182A47A6256FBC100031E052 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				182A47CE256FC2750031E052 /* UserService.swift in Sources */,
 				182A47B2256FBC100031E052 /* ViewController.swift in Sources */,
 				182A47AE256FBC100031E052 /* AppDelegate.swift in Sources */,
 				182A47B8256FBC100031E052 /* RandomUser2.xcdatamodeld in Sources */,
+				182A47C7256FBC9B0031E052 /* MyTableViewCell.swift in Sources */,
+				182A47CB256FC2680031E052 /* UserModel.swift in Sources */,
 				182A47B0256FBC100031E052 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +372,7 @@
 		};
 		182A47C2256FBC130031E052 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AAA77C77A02B0FE5E4FFEA4 /* Pods-RandomUser2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -306,6 +392,7 @@
 		};
 		182A47C3256FBC130031E052 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60AB27CD6D35D9E01BE33798 /* Pods-RandomUser2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
